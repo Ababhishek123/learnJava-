@@ -1,0 +1,43 @@
+package com.learnToCode;
+
+public class Main {
+
+  public static void main(String[] args) {
+    System.out.println("hello ");
+    // Logical operator
+    /*&&- AND
+      ||- OR
+      ! - NOT
+      NOTE;all these operator are according the truth table of  logic gates
+
+
+    */
+
+    boolean a = true;
+    boolean b = false;
+    boolean c = true;
+    boolean d = false;
+    System.out.println("for  logical  AND (&&) ");
+    System.out.println(a && b);
+    System.out.println(a && c);
+    System.out.println(b && c);
+    System.out.println(b && d);
+    // for logical or
+    System.out.println("for  logical OR (||) ");
+    System.out.println(a || b);
+    System.out.println(a || c);
+    System.out.println(b || c);
+    System.out.println(b || d);
+
+    // for logical NOT
+    // it reverse the value of operator
+    // !true =false
+    // !false =true
+
+    System.out.println("for  logical NOT(!) ");
+    System.out.println(!a);
+    System.out.println(!b);
+    System.out.println(!c);
+    System.out.println(!d);
+  }
+}
