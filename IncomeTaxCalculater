@@ -10,32 +10,32 @@ public class incomeTax {
       float sal =sc.nextFloat();
       
       
-      if(sal<250000f){
+      if(sal<=250000f){
         System.out.println("your  net payable tax is 0");
         
       }
       
-      else if(sal>250000 && sal<500000){
-        System.out.println("your taxable value is ₹:" + sal*0.05f);
+      else if(sal>250000 && sal<=500000){
+        System.out.println("your taxable value is ₹:" + (sal-250000)*0.05f);
         
       }
       
-      else if(sal>500000 && sal<750000){
+      else if(sal>500000 && sal<=750000){
         float a= (sal-500000)*0.1f;
         System.out.println("net tax ₹:"+ (a+12500));        
       }
       
-      else if(sal>750000 && sal<1000000){
+      else if(sal>750000 && sal<=1000000){
         float b =(sal-750000)*0.15f;
         System.out.println("net tax ₹:"+ (b+25000+12500));
         
       }
-      else if(sal>1000000 && sal<1250000){
+      else if(sal>1000000 && sal<=1250000){
         float c =(sal-1250000)*0.2f;
         System.out.println("net tax ₹:"+(c+37500+25000+12500));
         
       }
-      else if(sal>1250000 && sal<1500000){
+      else if(sal>1250000 && sal<=1500000){
         float d =(sal-1500000)*0.25f;
         System.out.println("net tax ₹:" +(d+50000+37500+25000+12500));
         
