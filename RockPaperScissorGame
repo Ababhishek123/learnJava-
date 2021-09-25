@@ -1,0 +1,72 @@
+package com.practice;
+//import java.lang.Math;
+import java.util.Scanner;
+import java.util.Random;
+
+public class RockPaperScissorGame {
+
+  public static void main(String[] args) {
+      System.out.println("game");
+      //double a =Math.random();
+      //int b= (int)(a*100);
+      //System.out.println(b);
+      
+      
+      Scanner sc =new Scanner(System.in);
+      System.out.print("enter:9 for rock\n      8 for paper\n      7 for scissor :\t");
+      int num =sc.nextInt();
+      
+      
+      Random random =new Random();
+      int com = random.nextInt(3);
+      /* 0 for ROCK
+         1 for PAPER
+         2 for SCISSOR */
+      
+      
+      if(num==9 && com==2){
+      
+        System.out.println("you got:ROCK \ncomputer got: SCISSOR");
+        System.out.println("congratulation! you won.");
+        
+      }
+      else if(num==9 && com==1){
+      
+        System.out.println("you got:ROCK\ncomputer got:PAPER");
+        System.out.println("sorry! you lose,computer wins");
+        
+      }
+      else if(num==8 && com==0){
+      
+        System.out.println("you got:PAPER\ncomputer got:ROCK");
+        System.out.println("congratulation! you won");
+        
+      }
+      else if(num==8 && com==2){
+      
+        System.out.println("you got:PAPER\ncomputer got:SCISSOR");
+        System.out.println("sorry! you lose, computer wins");
+        
+      }
+      else if(num==7 && com==0){
+      
+        System.out.println("you got:SCISSOR\ncomputer got:ROCK");
+        System.out.println("sorry! you lose, computer wins ");
+      }
+      else if(num==7 && com==1){
+      
+        System.out.println("you got:SCISSOR\ncomputer got:PAPER");
+        System.out.println("congratulation!  you won ");
+        }
+        else{
+          System.out.println("match tie or Invalid Entry");
+          
+        }
+      
+      
+      
+        
+      
+  }
+
+}
