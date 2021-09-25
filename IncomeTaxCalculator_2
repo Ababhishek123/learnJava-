@@ -1,0 +1,60 @@
+package com.practice;
+import java.util.Scanner;
+
+public class IncomeTax2 {
+
+  public static void main(String[] args) {
+      System.out.println("calculate income tax ");
+      Scanner sc =new Scanner(System.in);
+      System.out.print("enter your annual Income :");
+      float income =sc.nextFloat();
+      
+      float tax = 0;
+      if(income<=250000){
+        tax =tax+0;
+        
+      }
+      else if(income>250000 && income<=500000){
+        tax =tax + 0.05f* (income-250000);
+        
+      }
+      else if(income>500000 && income<=750000){
+        tax=tax+0.05f*(250000);
+        tax =tax+0.1f*(income-500000);
+        
+      }
+      else if(income>750000 && income<=1000000){
+        tax=tax+0.05f*(250000);
+        tax=tax+0.1f*(250000);
+        tax=tax+0.15f*(income-750000);
+        
+      }
+      else if(income>1000000 && income<=1250000){
+        tax=tax+0.05f*(250000);
+        tax=tax+0.1f*(250000);
+        tax=tax+0.15f*(250000);
+        tax=tax+0.2f*(income-1000000);
+        
+      }
+      else if(income>1250000 && income<=1500000){
+        tax=tax+0.05f*(250000);
+        tax=tax+0.1f*(250000);
+        tax=tax+0.15f*(250000);
+        tax=tax+0.2f*(250000);
+        tax=tax+0.25f*(income-1250000);
+      }
+      else{
+        tax=tax+0.05f*(250000);
+        tax=tax+0.1f*(250000);
+        tax=tax+0.15f*(250000);  
+        tax=tax+0.2f*(250000);
+        tax=tax+0.25f*(250000);
+        tax=tax+0.3f*(income-1500000);
+        
+      }
+      
+      System.out.println("your tax is :"+ tax);
+      
+  }
+
+}
