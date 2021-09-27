@@ -1,0 +1,22 @@
+package com.practice;
+import java.lang.Math;
+import java.util.Scanner;
+
+public class RuleOf72 {
+
+  public static void main(String[] args) {
+      System.out.println("rule of 72");
+      Scanner sc =new Scanner(System.in);
+      System.out.print("enter rate of interest:");   
+      double rate =sc.nextDouble();
+      
+      double x =1+(rate/100.0);  
+      double y =Math.log10(x);
+      double a =Math.log10(2);
+      //System.out.println(a);
+      double time =a/y;
+      
+      System.out.println("your money will double in :\n"+time+" years.");
+  }
+
+}
