@@ -1,0 +1,24 @@
+package com.PracticeProblem;
+
+import java.util.Scanner;
+
+public class findYearsMonthsDays {
+
+  public static void main(String[] args) {
+
+    // enter no. of days and get how many years,months and days the year have.
+
+    Scanner sc = new Scanner(System.in);
+    System.out.print("enter number of days: ");
+    int days = sc.nextInt();
+
+    int year = days / 365;
+    int a = days % 365;
+    int month = a / 30;
+    int b = a % 30;
+    int week = b / 7;
+    int day = b % 7;
+
+    System.out.println(year + " year, " + month + " month, " + week + " week," + day + " days");
+  }
+}
