@@ -1,0 +1,36 @@
+package abhishek;
+
+import java.util.Scanner;
+import java.lang.Math;
+
+public class primeFactorisation {
+
+  public static void main(String[] args) {
+    // prime factorization of numbers
+    Scanner sc = new Scanner(System.in);
+    System.out.print("enter a no.: ");
+    int n = sc.nextInt();
+
+    int q = n;
+    int t = 2;
+    int a = (int) (Math.sqrt(q));
+    // System.out.println(a);
+
+    while (t <= Math.sqrt(q)) {
+      if (q % t == 0) {
+        System.out.print(t + "×");
+        q = q / t;
+
+      }
+      else {
+        t = t + 1;
+      }
+    }
+    if (q == n) {
+      System.out.println(n + " is prime");
+    }
+    else {
+      System.out.println(q + "=" + n);
+    }
+  }
+}
